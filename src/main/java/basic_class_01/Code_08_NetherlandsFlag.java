@@ -23,7 +23,7 @@ public class Code_08_NetherlandsFlag {
 				swap(arr, --more, index);
 			}
 		}
-		return arr;
+		return new int[] {less,more};
 	}
 
 	public static void swap(int[] arr, int a, int b) {
@@ -45,7 +45,9 @@ public class Code_08_NetherlandsFlag {
 
 		System.out.println(Arrays.toString(test));
 		int[] res = partition(test, 1);
-		System.out.println(Arrays.toString(res));
+		System.out.println(Arrays.toString(test));
+		System.out.println(res[0]);
+		System.out.println(res[1]);
 	}
 
 }
