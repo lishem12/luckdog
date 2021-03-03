@@ -40,9 +40,7 @@ public class SortComparator {
 			return null;
 		}
 		int[] arr2 = new int[arr.length];
-		for (int i = 0; i < arr.length; ++i) {
-			arr2[i] = arr[i];
-		}
+		System.arraycopy(arr, 0, arr2, 0, arr.length);
 		return arr2;
 	}
 }
